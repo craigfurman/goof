@@ -22,3 +22,9 @@ patch:
         patched: '2021-05-12T12:33:30.992Z'
     - tap > nyc > istanbul-lib-instrument > babel-template > babel-traverse > babel-types > lodash:
         patched: '2021-05-12T12:33:30.992Z'
+  'npm:debug:20170905':
+    - tap > tap-mocha-reporter > debug:
+        patched: '2021-05-12T12:37:35.607Z'
+  'npm:ms:20170412':
+    - tap > tap-mocha-reporter > debug > ms:
+        patched: '2021-05-12T12:37:35.607Z'
