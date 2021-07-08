@@ -1,0 +1,82 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.19.0
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  SNYK-JS-AJV-584908:
+    - '*':
+        reason: None given
+        expires: '2021-08-07T09:12:39.891Z'
+  SNYK-JS-HOSTEDGITINFO-1088355:
+    - tap > nyc > test-exclude > read-pkg-up > read-pkg > normalize-package-data > hosted-git-info:
+        reason: None given
+        expires: '2021-08-07T09:12:39.891Z'
+    - hosted-git-info:
+        reason: None given
+        expires: '2021-08-07T09:12:39.891Z'
+    - normalize-package-data > hosted-git-info:
+        reason: None given
+        expires: '2021-08-07T09:12:39.891Z'
+    - nyc > test-exclude > read-pkg-up > read-pkg > normalize-package-data > hosted-git-info:
+        reason: None given
+        expires: '2021-08-07T09:12:39.891Z'
+  SNYK-JS-PATHPARSE-1077067:
+    - tap > nyc > test-exclude > read-pkg-up > read-pkg > normalize-package-data > resolve > path-parse:
+        reason: None given
+        expires: '2021-08-07T09:12:39.891Z'
+    - normalize-package-data > resolve > path-parse:
+        reason: None given
+        expires: '2021-08-07T09:12:39.892Z'
+    - nyc > test-exclude > read-pkg-up > read-pkg > normalize-package-data > resolve > path-parse:
+        reason: None given
+        expires: '2021-08-07T09:12:39.892Z'
+  'npm:ms:20151024':
+    - humanize-ms > ms:
+        reason: None given
+        expires: '2021-08-07T09:12:39.891Z'
+  SNYK-JS-DUSTJSLINKEDIN-1089257:
+    - dustjs-linkedin:
+        reason: None given
+        expires: '2021-08-07T09:12:39.891Z'
+  SNYK-JS-EJS-1049328:
+    - ejs-locals > ejs:
+        reason: None given
+        expires: '2021-08-07T09:12:39.891Z'
+  'npm:ejs:20161128':
+    - ejs-locals > ejs:
+        reason: None given
+        expires: '2021-08-07T09:12:39.891Z'
+  'npm:ejs:20161130':
+    - ejs-locals > ejs:
+        reason: None given
+        expires: '2021-08-07T09:12:39.891Z'
+  'npm:ejs:20161130-1':
+    - ejs-locals > ejs:
+        reason: None given
+        expires: '2021-08-07T09:12:39.891Z'
+  SNYK-JS-GLOBPARENT-1016905:
+    - chokidar > glob-parent:
+        reason: None given
+        expires: '2021-08-07T09:12:39.891Z'
+    - dustjs-linkedin > chokidar > glob-parent:
+        reason: None given
+        expires: '2021-08-07T09:12:39.891Z'
+    - anymatch > micromatch > parse-glob > glob-base > glob-parent:
+        reason: None given
+        expires: '2021-08-07T09:12:39.891Z'
+    - chokidar > anymatch > micromatch > parse-glob > glob-base > glob-parent:
+        reason: None given
+        expires: '2021-08-07T09:12:39.891Z'
+    - dustjs-linkedin > chokidar > anymatch > micromatch > parse-glob > glob-base > glob-parent:
+        reason: None given
+        expires: '2021-08-07T09:12:39.891Z'
+  'npm:braces:20180219':
+    - anymatch > micromatch > braces:
+        reason: None given
+        expires: '2021-08-07T09:12:39.892Z'
+    - chokidar > anymatch > micromatch > braces:
+        reason: None given
+        expires: '2021-08-07T09:12:39.892Z'
+    - dustjs-linkedin > chokidar > anymatch > micromatch > braces:
+        reason: None given
+        expires: '2021-08-07T09:12:39.892Z'
+patch: {}
